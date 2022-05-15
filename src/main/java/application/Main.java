@@ -1,7 +1,6 @@
-package ITBox.application;
+package application;
 
-import ITBox.tools.SubnetCalculator;
-import ITBox.application.GUI.*;
+import tools.SubnetCalculator;
 
 import java.util.ArrayList;
 import java.util.Scanner;

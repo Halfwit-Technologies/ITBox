@@ -1,8 +1,5 @@
-package ITBox.application;
-import ITBox.tools.*;
+package main.java.application;
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class GUI extends JFrame{
     public int numHosts;
@@ -15,21 +12,22 @@ public class GUI extends JFrame{
     private JTextField BroadcastField;
     private JTextField ClassTypeField;
 
-
     private JPanel mainPanel;
     private JTextArea HostBoxField;
 
 
-    GUI(int initHosts, String initClassT){
+    public GUI(){
         //numHosts = initHosts;
         //ClassType = initClassT;
+        /*
         StartCalc.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(StartCalc, ClassTypeField.getText()+" Numbers");
+                System.out.println("Test");
             }
         });
 
+         */
     }
     public String getNetwork() {
         return NetworkField.getText();
@@ -48,15 +46,12 @@ public class GUI extends JFrame{
     }
 
     public static void main(String[] args){
-        JFrame g = new JFrame("Subnet calc");
+        GUI g = new GUI();
         g.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        g.setSize(1920,1080);
+        g.setSize(300,400);
         g.setLocationRelativeTo(null);
-        //g.setContentPane(new mainPanel);
-        JButton button1 = new JButton("Press");
+        g.setContentPane(g.mainPanel);
+        g.pack();
         g.setVisible(true);
     }
-
-
-
 }
