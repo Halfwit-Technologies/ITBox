@@ -28,6 +28,11 @@ public class NetAddress {
         return new byte[] {byteAddress[0],byteAddress[1],byteAddress[2],byteAddress[3]};
     }
 
+    public NetAddress incrementOne() {
+        return new NetAddress(ByteBuffer.allocate(4).putLong(ByteBuffer.wrap(byteAddress).getLong() + 1).array());
+
+    }
+
     @Override
     public String toString() {
         return address;

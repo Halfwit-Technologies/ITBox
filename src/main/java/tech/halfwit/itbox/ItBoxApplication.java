@@ -32,7 +32,7 @@ public class ItBoxApplication extends Application {
         //byte test = (byte) 256;
         //int mask = 0xFF;
         //System.out.println(test & mask);
-        Subnet test = new Subnet("test",new NetAddress(new byte[]{(byte)172,(byte)16,(byte)0,(byte)0}),15);
+        Subnet test = new Subnet("test",new NetAddress(new byte[]{(byte)172,(byte)16,(byte)0,(byte)0}),12);
         /*
         int subnetMaskNet = (0xFFFFFFFF << (32-27));
         System.out.println(subnetMaskNet);
@@ -42,6 +42,6 @@ public class ItBoxApplication extends Application {
         System.out.println(subnetMask);
 
          */
-        //launch();
+        launch();
     }
 }

@@ -67,4 +67,16 @@ public class Subnet {
         System.out.println("Last usable: " + lastUsableAddr);
         System.out.println("Broadcast: " + broadcastAddr);
     }
+
+    public NetAddress getBroadcastAddr() {
+        return broadcastAddr;
+    }
+
+    public NetAddress getSubnetMask() {
+        return subnetMask;
+    }
+
+    public int getSubnetClass() {
+        return subnetClass;
+    }
 }
